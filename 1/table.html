@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Shopping Bill
+      </caption>
+      <thead>
+        <tr>
+          <th>S NO</th>
+          <th>ITEM/DESC</th>
+          <th>DEPARTMENT</th>
+          <th>QTY</th>
+          <th>PRICE</th>
+          <th>TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>MILK</td>
+          <td>DAIRY</td>
+          <td>02</td>
+          <td>60</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>COFFE</td>
+          <td rowspan="2">GROCERY</td>
+          <td>10</td>
+          <td>15</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>SUGAR</td>
+          <td>02</td>
+          <td>50</td>
+          <td>120</td>
+        </tr>
+        <tr>
+          <td colspan="5">SUBTOTAL</td>
+          <td>370</td>
+        </tr>
+        <tr>
+          <td colspan="4">DELIVERY CHARGES</td>
+          <td>30</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">TOTAL BILL</td>
+          <td>400</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

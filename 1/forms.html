@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td><label for="username">Name</label></td>
+          <td><input type="text" id="username" name="username" required autofocus autocomplete="off"></td>
+        </tr>
+        <tr>
+          <td><label for="uemail">Email</label></td>
+          <td>
+            <input type="email" id="uemail" name="useremail" required autocomplete="off">
+            <button type="button">Check</button>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="uage">Age</label></td>
+          <td><input type="number" max="100" min="18" id="uage" required autocomplete="off"></td>
+        </tr>
+        <tr>
+          <td><label>Country</label></td>
+          <td><input value="India" readonly></td>
+        </tr>
+        <tr>
+          <td><label for="pwd">Password</label></td>
+          <td><input type="password" id="pwd" required autocomplete="off"></td>
+        </tr>
+        <tr>
+          <td><label for="uresume">Resume</label></td>
+          <td><input id="uresume" type="file" accept=".pdf" required></td>
+        </tr>
+        <tr>
+          <td><label for="uhobby">Hobbies</label></td>
+          <td>
+            <label><input type="checkbox" id="uhobby" value="1">Cricket</label>
+            <label><input type="checkbox" value="2">Football</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="ugender">Gender</label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" id="ugender" name="gender">Male
+            </label>
+            <label> <input type="radio" name="gender" required> </label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="uCity">City</label></td>
+          <td>
+            <select aria-label="City" name="City" id="uCity" >
+              <option selected disabled>--Choose City--</option>
+              <optgroup label="Metros">
+                <option>New delhi</option>
+                <option>Chennai</option>
+                <option>Bangalore</option>
+                <option>Mumbai</option>
+              </optgroup>
+              <optgroup label="others">
+                <option>Kurukshetra</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="uaddress">Address</label></td>
+          <td>
+            <textarea
+              name="address"
+              id="uaddress"
+              cols="30"
+              rows="10" placeholder="Type Your Current Address" autocomplete="off"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit"> <input type="reset"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><progress></progress>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
